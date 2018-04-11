@@ -1,0 +1,188 @@
+body{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  margin: 0px;
+}
+#title-top{
+  color: white;
+  font-size: 6vw;
+  text-decoration: underline;
+  width: 29.5vw;
+  margin: auto;
+  display: block;
+}
+#container{
+  width: 400px;
+  height: 400px;
+  top: 150px;
+  position: relative;
+  perspective: 1000px;
+  margin: auto;
+  user-select: none;
+}
+#cube{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  line-height: 500px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 50px;
+}
+#cube figure{
+  margin: 0px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 1px solid black;
+  backface-visibility: visible;
+  opacity: 1;
+}
+
+#cube .front{transform: rotateY(0deg) translateZ(200px); background: yellow}
+#cube .back{transform: translateZ(-200px) rotateY(180deg); background: orange}
+#cube .top{transform: rotateX(90deg) translateZ(200px); background: blue}
+#cube .bottom{transform: rotateX(-90deg) translateZ(200px); background: red}
+#cube .left{transform: rotateY(-90deg) translateZ(200px); background: lightgreen}
+#cube .right{transform: rotateY(90deg) translateZ(200px); background: violet}
+
+#cube-title-front{
+  font-size: 35px;
+  line-height: 35px;
+  vertical-align: top;
+}
+#cube-front-p{
+  font-size: 15px;
+  line-height: 20px;
+  float: none;
+  margin-left:50px;
+  width: 300px;
+  color: black;
+}
+#cube-top-title{
+  font-size: 35px;
+  line-height: 35px;
+  vertical-align: top;
+}
+#cube-top-tiger{
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  right: 210px;
+}
+#cube-top-soda{
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  right: 40px;
+}
+#cube-top-dog{
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  right: 40px;
+  top: 225px;
+}
+#cube-top-bike{
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  right: 210px;
+  top: 225px;
+}
+#cube-bottom-title{
+  font-size: 35px;
+  line-height: 35px;
+  vertical-align: top;
+}
+#cube-bottom-video{
+  width: 390px;
+  height: 270px;
+}
+#cube-back-title{
+  font-size: 35px;
+  line-height: 35px;
+  vertical-align: top;
+}
+#cube-back-gradient-top{
+  height: 295px;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to right, blue, lightgreen);
+  animation-name: gradient-ani;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  z-index: 10;
+  opacity: 1;
+}
+#cube-back-gradient-bottom{
+  height: 295px;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to right, lightgreen, blue);
+}
+@keyframes gradient-ani{
+  0%{opacity: 1}
+  50%{opacity: 0}
+  100%{opacity: 1}
+}
+#cube-right-title{
+  font-size: 35px;
+  line-height: 35px;
+  vertical-align: top;
+}
+#ball-sim-cont{
+  height: 291px;
+  width: 396;
+  background-color: black;
+  border: 2px solid white;
+}
+.sim-ball{
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+#cube-left-title{
+  font-size: 35px;
+  line-height: 35px;
+  vertical-align: top;
+}
+#cube-left-form-cont{
+  height: 200px;
+  width: 200px;
+  margin-left: 100px;
+  position: absolute;
+  border: 2px solid black;
+}
+#login-form-title{
+  margin: none;
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+}
+#cube-left-form-cont form{
+  height: inherit;
+}
+#cube-left-form-cont input{
+  position: absolute;
+  width: 150px;
+  left:25px;
+}
+#form-username{
+  top: 70px;
+}
+#form-password{
+  top: 120px;
+}
+#form-button{
+  position: absolute;
+  width: 70px;
+  right: 65px;
+  top: 150px;
+}

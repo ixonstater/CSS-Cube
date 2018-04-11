@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='cube.css'></link>
+    <script src='./cube.js' type='module'></script>
+  </head>
+  <body>
+    <div id='title-top'><h>Try 3D CSS</h></div>
+    <div id="container">
+      <div id="cube">
+        <figure class="front" id="front">
+          <div id='cube-title-front'><p>Clickable Rotating Cube</p></div>
+          <div id='cube-front-p'><p>This cube is an improvement over a previous version, but it still exhibits some strange behaviors.  For example, when it is rotated either up or down by ninety degrees, moving the mouse lateraly along the x-axis will cause the cube to rotate along it's z-axis rather than in the same direction as the mouse.  This flaw could be remedied, but I actually prefer it this way.  The sides of the cube illustrate some ways that it can be used.</p></div>
+        </figure>
+        <figure class="back">
+          <div id='cube-back-title'><p>Nested CSS Animations</p></div>
+          <div id='cube-back-gradient-top'></div>
+          <div id='cube-back-gradient-bottom'></div>
+        </figure>
+        <figure class="right">
+          <div id='cube-right-title'><p>Small (or big) Applications</p></div>
+          <div id='ball-sim-cont'></div>
+        </figure>
+        <figure class="left">
+          <div id='cube-left-title'><p>Input Forms</p></div>
+          <div id='cube-left-form-cont'>
+            <p id='login-form-title'>Login Here</p>
+            <form>
+              <input type='text' id='form-username'/>
+              <input type='password' id='form-password'/>
+              <button id='form-button'>Log In</button>
+            </form>
+          </div>
+        </figure>
+        <figure class="top">
+          <div id='cube-top-title'><p>Images Work Great</p></div>
+          <div id='cube-top-pics-cont' draggable="false">
+            <img id='cube-top-tiger' src='tiger.jpg' draggable="false"/>
+            <img id='cube-top-soda' src='soda.jpeg' draggable="false"/>
+            <img id='cube-top-dog' src='dog.jpeg' draggable="false"/>
+            <img id='cube-top-bike' src='bike.jpeg' draggable="false"/>
+          </div>
+        </figure>
+        <figure class="bottom">
+          <div id='cube-bottom-title'><p>Videos Work Too</p></div>
+          <video id='cube-bottom-video' controls>
+            <source src='deer.mp4' type='video/mp4'>
+            Your Browser Does Not Support the Video Tag
+          </video>
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>
